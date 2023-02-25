@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto';
+
+
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+}
+tr, td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("pexel_mod.jpg");
+}
+
+label{
+    margin-right: 1rem;
+}
+
+.container{
+    padding: 2rem;
+    width: 80%;
+    background: rgba(255, 255, 255);
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, 0.288);
+}
+
+.page-header{
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(20, 20, 20);
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+#append-menu {
+	width: 50%;
+    height: 40%;
+    overflow-y: scroll;
+}
+
+
+
+.dropdown:hover .dropdown-menu{
+    position: absolute;
+    display: block;
+}
+
+.dropdown{
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+
+.dropdown-side-menu{
+    display: none;
+    margin-left: 1rem;
+    background: white;
+    padding: 0.5rem;
+}
+
+.dropdown-side:hover .dropdown-side-menu{
+    position: relative;
+    display: block;
+    float: right;
+}
+
+
+.add-button{
+    color: white;
+    background: rgb(32, 196, 46);
+    padding: 5px;
+
+}
+
+.delete-button{
+    color: white;
+    background: rgb(230, 43, 43);
+    padding: 5px;
+
+}
+.add-class-text{
+    color: white;
+    background: rgb(105, 105, 105);
+    padding: 5px;
+}
+.hours-select{
+    color: white;
+    background: rgb(19, 19, 19);
+    padding: 5px;
+}
+.new-class-form{
+    flex-direction: column;
+    display: inline-flex;
+    border-left: 1px solid gray;
+    padding: 0.6rem;
+}
+
+
+textarea{
+    resize: none;
+    border: 1px solid gray;
+}
+ul{
+    list-style: none;
+    border: 1px solid black;
+
+}
+
+#append-list {
+    padding: 0;
+    margin: 0;	
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+	column-gap: 0;
+	text-align: center;
+}
+
+li{
+    padding: 10px;
+    border: 1px solid black;
+    background:rgba(146, 146, 146, 0.788);
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+button{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+    color: white;
+    background-color: rgb(34, 153, 168);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(20, 77, 85);
+   
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        width: 100%;
+    }
+    table{
+        font-size: 0.5rem;
+
+    }
+    .new-class-form{
+        margin-top: 1rem;
+        border-left: none;
+        border-top: 1px solid gray;
+    }
+    .submit-button{
+        width: 100%;
+    }
+    .page-header{
+        width: 110%;
+        color: rgb(255, 255, 255);
+    }
+    footer{
+        color: white;
+        width: 110%;
+        margin-bottom: 3rem;
+    }
+    #append-menu {
+        min-width: 100%;
+        height: 50%;
+        overflow-y: scroll;
+    }
+}
